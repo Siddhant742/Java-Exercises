@@ -1,12 +1,12 @@
 // Write a function which takes in 2 numbers and returns the greater of those two.
 import java.util.Scanner;
 public class Greatest {
-    public void greatest(int N1, int N2){
+    public int greatest(int N1, int N2){
         if(N1>N2){
-            System.out.println(N1 + " is greater");
+            return N1;
         }
         else{
-            System.out.println(N2 + " is greater"); 
+            return N2;
         }
     }
     public static void main(String[] args){
@@ -15,7 +15,8 @@ public class Greatest {
         int num1 = num.nextInt();
         int num2 = num.nextInt();
         Greatest obj =new Greatest();
-        obj.greatest(num1,num2);
+        int greater = obj.greatest(num1,num2);
+        System.out.println(greater + " is greater");
         num.close();
     }
 }

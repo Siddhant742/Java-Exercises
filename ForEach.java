@@ -2,7 +2,7 @@ public class ForEach {
     public static void main(String[] arg)
     {
         {
-            int[] marks = { 125, 132, 95, 116, 110 };
+            int[] marks = { 125, 132, 95, 11, 110 };
               
             int highest_marks = maximum(marks);
             System.out.println("The highest score is " + highest_marks);
